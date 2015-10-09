@@ -1,0 +1,67 @@
+references:
+<$publications>
+-	id: <$citeKey/>  
+	title: '<$fields.Title.stringByRemovingTeX/>'  
+	type: <$pubType/>  
+	author:
+	- 	family: <$authors.lastName.@firstObject/>  
+		given: <$authors.firstName.@firstObject/>  
+	<$authors.lastName.@secondObject?>
+	- 	family: <$authors.lastName.@secondObject/>  
+		given: <$authors.firstName.@secondObject/>  
+	</$authors.lastName.@secondObject?>
+	<$authors.lastName.@thirdObject?>
+	- 	family: <$authors.lastName.@thirdObject/>  
+		given: <$authors.firstName.@thirdObject/>  
+	</$authors.lastName.@thirdObject?>
+	<$authors.lastName.@fourthObject?>
+	- 	family: <$authors.lastName.@fourthObject/>  
+		given: <$authors.firstName.@fourthObject/>  
+	</$authors.lastName.@fourthObject?>  
+	<$editors.lastName.@firstObject?>  
+	editor:
+	- 	family: <$editors.lastName.@firstObject/>  
+		given: <$editors.firstName.@firstObject/>  
+	</$editors.lastName.@firstObject?>  
+	<$editors.lastName.@secondObject?>
+	- 	family: <$editors.lastName.@secondObject/>  
+		given: <$editors.firstName.@secondObject/>  
+	</$editors.lastName.@secondObject?>
+	<$editors.lastName.@thirdObject?>
+	- 	family: <$editors.lastName.@thirdObject/>  
+		given: <$editors.firstName.@thirdObject/>  
+	</$editors.lastName.@thirdObject?>
+	<$editors.lastName.@fourthObject?>
+	- 	family: <$editors.lastName.@fourthObject/>  
+		given: <$editors.firstName.@fourthObject/>  
+	</$editors.lastName.@fourthObject?>  
+	keywords: [<$fields.Keywords.lowercaseString.stringByRemovingTeX/>]  
+	year: <$fields.Year/>  
+	<$fields.Journal?>
+	journal: <$fields.Journal.stringByRemovingTeX/>  
+	</$fields.Journal?>
+	<$fields.Volume?>
+	volume: <$fields.Volume/>  
+	</$fields.Volume?>
+	<$fields.Number?>
+	number: <$fields.Number/>  
+	</$fields.Number?>
+	<$fields.Pages?>
+	pages: <$fields.Pages/>  
+	</$fields.Pages?>
+	<$fields.Address?>
+	address: '<$fields.Address.stringByRemovingTeX/>'  
+	</$fields.Address?>
+	<$fields.Publisher?>
+	publisher: '<$fields.Publisher.stringByRemovingTeX/>'  
+	</$fields.Publisher?>
+	<$fields.ISBN?>
+	isbn: <$fields.ISBN/>  
+	</$fields.ISBN?>
+	<$fields.URL?>
+	url: <$fields.URL/>  
+	</$fields.URL?>
+	<$fields.DOI?>
+	doi: <$fields.DOI/>  
+	</$fields.DOI?>
+</$publications>
